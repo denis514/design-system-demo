@@ -805,7 +805,7 @@
         "scss": "$semantic-information-500"
       },
       "valueHash": {
-        "3680:1": "be2be7d5"
+        "3680:1": "a940aa07"
       }
     },
     {
@@ -975,7 +975,7 @@
         "scss": "$semantic-brand-500"
       },
       "valueHash": {
-        "3680:1": "be2be7d5"
+        "3680:1": "a940aa07"
       }
     },
     {
@@ -1578,7 +1578,7 @@
         "scss": "$surface-information-default"
       },
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "fc598cd0"
       }
     },
     {
@@ -4834,7 +4834,7 @@
         "scss": "$color-brand-500"
       },
       "valueHash": {
-        "1293:0": "1e617fe2"
+        "1293:0": "fb34ee34"
       }
     },
     {
@@ -6797,7 +6797,7 @@
         "scss": "$icon-brand-default"
       },
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "fc598cd0"
       }
     },
     {
@@ -7290,7 +7290,7 @@
         "scss": "$surface-brand-default"
       },
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "fc598cd0"
       }
     },
     {
@@ -8254,7 +8254,7 @@
         "scss": "$text-brand-default"
       },
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "fc598cd0"
       }
     },
     {
@@ -9521,7 +9521,7 @@
         "scss": "$border-brand-default"
       },
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "fc598cd0"
       }
     },
     {
@@ -11243,7 +11243,7 @@
         "scss": "$icon-information-default"
       },
       "valueHash": {
-        "3681:0": "be2be7d5"
+        "3681:0": "a940aa07"
       }
     },
     {
