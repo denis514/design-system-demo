@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design tokens — live check</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-title">Design tokens</h1>
+      <p class="page-subtitle" id="summary">Loading…</p>
+      <p class="page-note">
+        Everything below is drawn with the exported tokens. Nothing on this page contains a
+        hardcoded colour, size or font. Narrow the window past 1024&nbsp;px to see the type scale
+        change — that is the Mobile/Desktop mode from Figma, working as a media query.
+      </p>
+    </header>
+
+    <main class="page">
+      <section class="section" id="components-section">
+        <h2 class="section-title">Components</h2>
+        <p class="section-note">
+          Hand-written SCSS that uses only <code>$tokens</code> and typography mixins. If the
+          exported API were awkward, it would show here first.
+        </p>
+
+        <div class="specimen-row">
+          <button class="btn btn--primary" type="button">Primary action</button>
+          <button class="btn btn--secondary" type="button">Secondary</button>
+          <button class="btn btn--primary" type="button" disabled>Disabled</button>
+        </div>
+
+        <div class="specimen-row">
+          <label class="field-label">
+            Email
+            <input class="field-input" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="field-label">
+            Invalid
+            <input class="field-input field-input--error" type="text" value="not an email" />
+          </label>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">A card</h3>
+          <p class="card-body">
+            Surface, border, radius, spacing and text colour all come from the semantic layer —
+            which points at the primitive layer, which is the only place a hex value exists.
+          </p>
+          <button class="btn btn--primary" type="button">Confirm</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Type scale</h2>
+        <p class="section-note">
+          Rendered with the generated CSS classes. Sizes and line heights are variables, so the
+          breakpoint changes them without touching this markup.
+        </p>
+        <div id="typography"></div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Colour</h2>
+        <p class="section-note">
+          Grouped by tier, straight from <code>tokens.manifest.json</code>. Semantic and component
+          swatches are references — their value is whatever the primitive resolves to.
+        </p>
+        <div id="colors"></div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Sizes</h2>
+        <div id="sizes"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

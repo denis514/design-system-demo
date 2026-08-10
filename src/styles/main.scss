@@ -1,0 +1,264 @@
+// Follows the generated README literally: one @use, then author against $tokens and mixins.
+// If that instruction is wrong, this file is where it shows.
+@use '../../tokens/scss' as tokens;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  // The font-family token names the typeface but does not load it — that is the consuming
+  // project's job, and inventing a fallback stack would be worse than saying so.
+  @include tokens.body-14-regular;
+  margin: 0;
+  background: tokens.$surface-default-default;
+  color: tokens.$text-default-default;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ---------------------------------------------------------------- page chrome
+
+.page-header {
+  padding: tokens.$size-1100 tokens.$size-800 tokens.$size-800;
+  border-bottom: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+  background: tokens.$surface-default-page;
+}
+
+.page-title {
+  @include tokens.display-l;
+  margin: 0 0 tokens.$size-300;
+  color: tokens.$text-default-heading;
+}
+
+.page-subtitle {
+  @include tokens.subtitle-18-semibold;
+  margin: 0 0 tokens.$size-400;
+  color: tokens.$text-default-default;
+}
+
+.page-note {
+  @include tokens.body-14-regular;
+  max-width: 60ch;
+  margin: 0;
+  color: tokens.$text-default-caption;
+}
+
+.page {
+  padding: tokens.$size-800;
+}
+
+.section {
+  padding-bottom: tokens.$size-1100;
+  margin-bottom: tokens.$size-1100;
+  border-bottom: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.section-title {
+  @include tokens.headline-3;
+  margin: 0 0 tokens.$size-200;
+  color: tokens.$text-default-heading;
+}
+
+.section-note {
+  @include tokens.body-14-regular;
+  max-width: 60ch;
+  margin: 0 0 tokens.$size-700;
+  color: tokens.$text-default-caption;
+}
+
+code {
+  padding: 0 tokens.$size-100;
+  border-radius: tokens.$semantic-border-radius-50;
+  background: tokens.$surface-default-page;
+  font-family: ui-monospace, monospace;
+}
+
+// ---------------------------------------------------------------- components
+
+.specimen-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: tokens.$size-400;
+  align-items: flex-end;
+  margin-bottom: tokens.$size-700;
+}
+
+.btn {
+  @include tokens.body-14-semibold;
+  padding: tokens.$size-300 tokens.$size-500;
+  border: tokens.$semantic-border-width-25 solid transparent;
+  border-radius: tokens.$semantic-border-radius-200;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: tokens.$semantic-border-width-50 solid tokens.$border-brand-focus;
+    outline-offset: tokens.$size-50;
+  }
+
+  &:disabled {
+    background: tokens.$surface-disabled-disabled;
+    color: tokens.$text-disabled-default;
+    cursor: not-allowed;
+  }
+}
+
+.btn--primary {
+  background: tokens.$surface-brand-default;
+  color: tokens.$text-brand-on-color;
+
+  &:hover:not(:disabled) {
+    background: tokens.$surface-brand-default-hover;
+  }
+}
+
+.btn--secondary {
+  border-color: tokens.$border-brand-default;
+  background: tokens.$surface-brand-on-color;
+  color: tokens.$text-brand-default;
+
+  &:hover:not(:disabled) {
+    background: tokens.$surface-brand-default-subtle-hover;
+  }
+}
+
+.field-label {
+  @include tokens.body-13-semibold;
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$size-200;
+  color: tokens.$text-default-default;
+}
+
+.field-input {
+  @include tokens.body-14-regular;
+  min-width: 260px;
+  padding: tokens.$size-300 tokens.$size-400;
+  border: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+  border-radius: tokens.$semantic-border-radius-200;
+  background: tokens.$surface-default-default;
+  color: tokens.$text-default-default;
+
+  &::placeholder {
+    color: tokens.$text-default-placeholder;
+  }
+
+  &:focus-visible {
+    border-color: tokens.$border-brand-default;
+    outline: tokens.$semantic-border-width-50 solid tokens.$border-brand-focus;
+    outline-offset: tokens.$size-50;
+  }
+}
+
+.field-input--error {
+  border-color: tokens.$border-error-default;
+}
+
+.card {
+  max-width: 480px;
+  padding: tokens.$size-700;
+  border: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+  border-radius: tokens.$semantic-border-radius-400;
+  background: tokens.$surface-default-page;
+}
+
+.card-title {
+  @include tokens.headline-5;
+  margin: 0 0 tokens.$size-300;
+  color: tokens.$text-default-heading;
+}
+
+.card-body {
+  @include tokens.body-14-regular;
+  margin: 0 0 tokens.$size-500;
+  color: tokens.$text-default-default;
+}
+
+// ---------------------------------------------------------------- galleries
+
+.group-title {
+  @include tokens.body-13-semibold;
+  margin: tokens.$size-700 0 tokens.$size-300;
+  color: tokens.$text-default-caption;
+  text-transform: capitalize;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: tokens.$size-300;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: tokens.$size-300;
+  min-width: 0;
+}
+
+.swatch-chip {
+  width: tokens.$size-800;
+  height: tokens.$size-800;
+  flex: none;
+  border: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+  border-radius: tokens.$semantic-border-radius-100;
+}
+
+.swatch-name {
+  @include tokens.helper-text-12-regular;
+  overflow: hidden;
+  color: tokens.$text-default-caption;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.size-row {
+  display: flex;
+  align-items: center;
+  gap: tokens.$size-400;
+  margin-bottom: tokens.$size-200;
+}
+
+.size-name {
+  @include tokens.helper-text-12-regular;
+  width: 160px;
+  flex: none;
+  color: tokens.$text-default-caption;
+}
+
+.size-bar {
+  height: tokens.$size-300;
+  border-radius: tokens.$semantic-border-radius-50;
+  background: tokens.$surface-brand-default;
+}
+
+.type-row {
+  display: flex;
+  align-items: baseline;
+  gap: tokens.$size-500;
+  padding: tokens.$size-300 0;
+  border-bottom: tokens.$semantic-border-width-25 solid tokens.$border-default-low-contrast;
+
+  p {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    color: tokens.$text-default-heading;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.type-name {
+  @include tokens.helper-text-12-regular;
+  width: 200px;
+  flex: none;
+  color: tokens.$text-default-caption;
+  text-align: right;
+}

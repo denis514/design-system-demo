@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# The point of this workflow: when the plugin opens a pull request with new tokens, a change
+# that breaks the styling fails here instead of reaching production. That feedback loop is the
+# whole reason this repository exists.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Fails on an undefined $variable or a missing mixin — which is exactly what a renamed or
+      # deleted token looks like from here.
+      - name: Build
+        run: pnpm run build
+
+      # A `var()` with no declaration is valid CSS that silently does nothing at runtime. The
+      # build cannot catch it; this can.
+      - name: Every custom property referenced is also declared
+        run: |
+          CSS=$(cat dist/assets/*.css)
+          echo "$CSS" | grep -o -- '--[a-z0-9-]*:' | sed 's/://' | sort -u > /tmp/declared.txt
+          echo "$CSS" | grep -o 'var(--[a-z0-9-]*)' | sed 's/var(\(.*\))/\1/' | sort -u > /tmp/referenced.txt
+          MISSING=$(comm -23 /tmp/referenced.txt /tmp/declared.txt)
+          if [ -n "$MISSING" ]; then
+            echo "Referenced but never declared:"
+            echo "$MISSING"
+            exit 1
+          fi
+          echo "$(wc -l < /tmp/declared.txt) properties declared, all references resolve"
+
+      - name: The responsive type scale survived
+        run: grep -q 'min-width:1024px' dist/assets/*.css
