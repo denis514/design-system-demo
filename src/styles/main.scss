@@ -188,10 +188,42 @@ code {
   text-transform: capitalize;
 }
 
-.swatch-grid {
+.family-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: tokens.$size-300;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: tokens.$size-700;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$size-200;
+  min-width: 0;
+}
+
+.family-name {
+  @include tokens.helper-text-12-semibold;
+  margin: 0 0 tokens.$size-100;
+  color: tokens.$text-default-caption;
+  text-transform: uppercase;
+}
+
+.swatch-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.swatch-value,
+.size-value {
+  @include tokens.helper-text-12-regular;
+  color: tokens.$text-default-caption;
+}
+
+.size-value {
+  width: 56px;
+  flex: none;
+  text-align: right;
 }
 
 .swatch {
