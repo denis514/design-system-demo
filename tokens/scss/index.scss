@@ -1,9 +1,0 @@
-// @generated variables-export v0.1.0 profile=scss-modern manifest=tokens.manifest.json
-// Source: Design System (Plugin Test Only)
-// Do not edit by hand — your changes will be overwritten on the next export.
-
-// The single entry point. @use this and you have everything.
-// `@use` on the variables emits the custom properties the $tokens point at.
-@use 'variables';
-@forward 'tokens';
-@forward 'typography';

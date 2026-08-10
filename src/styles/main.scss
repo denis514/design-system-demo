@@ -1,6 +1,6 @@
-// Follows the generated README literally: one @use, then author against $tokens and mixins.
-// If that instruction is wrong, this file is where it shows.
-@use '../../tokens/scss' as tokens;
+// One file, one @use — exactly what the generated header says. If that instruction is wrong,
+// this file is where it shows.
+@use '../../tokens/tokens' as tokens;
 
 *,
 *::before,

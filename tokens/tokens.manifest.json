@@ -8,8 +8,12 @@
     "name": "variables-export",
     "version": "0.1.0"
   },
-  "configHash": "b784782e",
+  "configHash": "f8774bad",
   "profile": "scss",
+  "files": [
+    "tokens.manifest.json",
+    "tokens.scss"
+  ],
   "tokens": [
     {
       "key": "00533b1623bea79219efc448c6cccdc10f5e4b18",
