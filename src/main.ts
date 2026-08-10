@@ -17,7 +17,8 @@ interface ManifestToken {
   readonly path: readonly string[];
   readonly type: string;
   readonly tier: string;
-  readonly collection: string;
+  /** Added later than the rest — a manifest written by an older plugin build will not have it. */
+  readonly collection?: string;
   readonly outputNames: Readonly<Record<string, string>>;
 }
 
@@ -123,15 +124,18 @@ function renderSizes(): void {
   // Grouped by collection, the same rule the plugin's preview uses. Tier alone put a 0
   // letter-spacing beside a 512px spacing step — they are the same tier, and the real scale
   // drowned among forty zeroes.
+  // Falls back to the tier when the manifest predates the collection field. A consumer that
+  // hard-fails on a missing key turns every generator update into a broken site, and the whole
+  // point of a manifest is that it can be read by something older than the thing that wrote it.
+  const groupOf = (token: ManifestToken): string => token.collection ?? token.tier;
+
   const dimensions = tokens.filter((token) => token.type === 'dimension');
-  const collections = [...new Set(dimensions.map((token) => token.collection))].sort((a, b) =>
-    a.localeCompare(b),
-  );
+  const collections = [...new Set(dimensions.map(groupOf))].sort((a, b) => a.localeCompare(b));
 
   const blocks: Node[] = [];
   for (const collection of collections) {
     const rows = dimensions
-      .filter((token) => token.collection === collection)
+      .filter((token) => groupOf(token) === collection)
       .map((token) => ({ token, px: Number.parseFloat(cssValue(token)) || 0 }))
       .sort((a, b) => a.px - b.px);
 
