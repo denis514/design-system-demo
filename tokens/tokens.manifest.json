@@ -16,6 +16,25 @@
   ],
   "tokens": [
     {
+      "key": "003d2258c0a16b130f017642378d12202e2274f7",
+      "id": "VariableID:8437:51",
+      "path": [
+        "color",
+        "test",
+        "700"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-700",
+        "scss": "$color-test-700"
+      },
+      "valueHash": {
+        "1293:0": "66393377"
+      }
+    },
+    {
       "key": "00bb34ce0827dde0d180a28cfb7edd023945bc4e",
       "id": "VariableID:5585:20186",
       "path": [
@@ -146,6 +165,25 @@
       },
       "valueHash": {
         "3681:0": "2a5c3b4a"
+      }
+    },
+    {
+      "key": "034966c9d12e2e03356e465d3af3fd16a1e12742",
+      "id": "VariableID:8437:55",
+      "path": [
+        "color",
+        "test",
+        "300"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-300",
+        "scss": "$color-test-300"
+      },
+      "valueHash": {
+        "1293:0": "eface08e"
       }
     },
     {
@@ -393,6 +431,25 @@
       },
       "valueHash": {
         "3680:1": "b1a97d98"
+      }
+    },
+    {
+      "key": "0aa12af828598c141d421d80a35bbb785310b8ae",
+      "id": "VariableID:8437:54",
+      "path": [
+        "color",
+        "test",
+        "400"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-400",
+        "scss": "$color-test-400"
+      },
+      "valueHash": {
+        "1293:0": "9f17d018"
       }
     },
     {
@@ -1582,6 +1639,25 @@
       }
     },
     {
+      "key": "24a516b0909afb3da04defe6128d5f44aca0f26a",
+      "id": "VariableID:8437:56",
+      "path": [
+        "color",
+        "test",
+        "200"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-200",
+        "scss": "$color-test-200"
+      },
+      "valueHash": {
+        "1293:0": "cdec6de7"
+      }
+    },
+    {
       "key": "25157a757a63adadf5c62403443537edb8b946cc",
       "id": "VariableID:3681:13885",
       "path": [
@@ -2073,6 +2149,25 @@
       },
       "valueHash": {
         "3681:0": "7249e924"
+      }
+    },
+    {
+      "key": "313a54dbe52d9766a500de0cf75b5faafa50323f",
+      "id": "VariableID:8437:57",
+      "path": [
+        "color",
+        "test",
+        "150"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-150",
+        "scss": "$color-test-150"
+      },
+      "valueHash": {
+        "1293:0": "a614f79f"
       }
     },
     {
@@ -2607,6 +2702,25 @@
       }
     },
     {
+      "key": "3ca55fcf6bae04726a561978aea8b1f482ce05f1",
+      "id": "VariableID:8437:53",
+      "path": [
+        "color",
+        "test",
+        "500"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-500",
+        "scss": "$color-test-500"
+      },
+      "valueHash": {
+        "1293:0": "b979f974"
+      }
+    },
+    {
       "key": "3ca8c64fdf4491540bd3e51b1e9dfc4a466d94f0",
       "id": "VariableID:6721:307",
       "path": [
@@ -2869,6 +2983,25 @@
       },
       "valueHash": {
         "3680:1": "80cd8a67"
+      }
+    },
+    {
+      "key": "42006973ff1bc2b78c5bfb766436ab331c940209",
+      "id": "VariableID:8437:52",
+      "path": [
+        "color",
+        "test",
+        "600"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-600",
+        "scss": "$color-test-600"
+      },
+      "valueHash": {
+        "1293:0": "3d12072e"
       }
     },
     {
@@ -3679,6 +3812,25 @@
       },
       "valueHash": {
         "3681:0": "0589d274"
+      }
+    },
+    {
+      "key": "556e26bd32e5db072d1736271b9c99c8955bb79c",
+      "id": "VariableID:8437:50",
+      "path": [
+        "color",
+        "test",
+        "800"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-800",
+        "scss": "$color-test-800"
+      },
+      "valueHash": {
+        "1293:0": "78af7695"
       }
     },
     {
@@ -5228,6 +5380,25 @@
       },
       "valueHash": {
         "1293:0": "5081bd86"
+      }
+    },
+    {
+      "key": "7519b3990480797788ce36a9035ed407fc00c2d0",
+      "id": "VariableID:8437:58",
+      "path": [
+        "color",
+        "test",
+        "125"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-125",
+        "scss": "$color-test-125"
+      },
+      "valueHash": {
+        "1293:0": "3481fdbe"
       }
     },
     {
@@ -8876,6 +9047,25 @@
       }
     },
     {
+      "key": "c154766898a25ab28b1f84c02beb463b0f682cb2",
+      "id": "VariableID:8437:49",
+      "path": [
+        "color",
+        "test",
+        "900"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-900",
+        "scss": "$color-test-900"
+      },
+      "valueHash": {
+        "1293:0": "070f129b"
+      }
+    },
+    {
       "key": "c16275dc1f6deab37502369ade4e9d3710acfe24",
       "id": "VariableID:6721:293",
       "path": [
@@ -9985,6 +10175,25 @@
       },
       "valueHash": {
         "1293:0": "ee352b13"
+      }
+    },
+    {
+      "key": "d74014ed8d6121808da66aca59cb95bbfe606320",
+      "id": "VariableID:8437:59",
+      "path": [
+        "color",
+        "test",
+        "100"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "source": "variable",
+      "outputNames": {
+        "css": "--color-test-100",
+        "scss": "$color-test-100"
+      },
+      "valueHash": {
+        "1293:0": "431ea5bf"
       }
     },
     {
