@@ -294,3 +294,97 @@ code {
   color: tokens.$text-default-caption;
   text-align: right;
 }
+
+/*
+  The type gallery renders one sample per text style, addressed by class.
+
+  The SCSS profile publishes text styles as **mixins**, not classes — deliberately, since a mixin
+  lands in the consumer's own selector and cannot collide with anything the project already has.
+  A consumer that wants classes writes them, which is what this is: one line per style, exactly as
+  the generated README describes.
+
+  Nothing generates this list, and that is on purpose. A style added in Figma appears in the
+  gallery from the manifest but has no class here, so it renders at the inherited size and is
+  visibly wrong — which is how the previous mismatch was noticed at all.
+*/
+.body-12-regular {
+  @include tokens.body-12-regular;
+}
+.body-12-semibold {
+  @include tokens.body-12-semibold;
+}
+.body-13-regular {
+  @include tokens.body-13-regular;
+}
+.body-13-semibold {
+  @include tokens.body-13-semibold;
+}
+.body-14-regular {
+  @include tokens.body-14-regular;
+}
+.body-14-semibold {
+  @include tokens.body-14-semibold;
+}
+.body-16-regular {
+  @include tokens.body-16-regular;
+}
+.body-16-semibold {
+  @include tokens.body-16-semibold;
+}
+.body-18-regular {
+  @include tokens.body-18-regular;
+}
+.body-18-semibold {
+  @include tokens.body-18-semibold;
+}
+.display {
+  @include tokens.display;
+}
+.display-l {
+  @include tokens.display-l;
+}
+.display-xl {
+  @include tokens.display-xl;
+}
+.display-xxl {
+  @include tokens.display-xxl;
+}
+.display-xxxl {
+  @include tokens.display-xxxl;
+}
+.headline-1 {
+  @include tokens.headline-1;
+}
+.headline-2 {
+  @include tokens.headline-2;
+}
+.headline-3 {
+  @include tokens.headline-3;
+}
+.headline-4 {
+  @include tokens.headline-4;
+}
+.headline-5 {
+  @include tokens.headline-5;
+}
+.headline-6 {
+  @include tokens.headline-6;
+}
+.helper-text-12-regular {
+  @include tokens.helper-text-12-regular;
+}
+.helper-text-12-semibold {
+  @include tokens.helper-text-12-semibold;
+}
+.subtitle-14-regular {
+  @include tokens.subtitle-14-regular;
+}
+.subtitle-14-semibold {
+  @include tokens.subtitle-14-semibold;
+}
+.subtitle-18-regular {
+  @include tokens.subtitle-18-regular;
+}
+.subtitle-18-semibold {
+  @include tokens.subtitle-18-semibold;
+}
