@@ -1,0 +1,20 @@
+{
+  "name": "design-system-plugin-test-only-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens generated from \"Design System (Plugin Test Only)\".",
+  "private": true,
+  "sideEffects": [
+    "tokens.scss"
+  ],
+  "exports": {
+    ".": "./tokens.js",
+    "./js": "./tokens.js",
+    "./scss": "./tokens.scss"
+  },
+  "types": "./tokens.d.ts",
+  "files": [
+    "tokens.d.ts",
+    "tokens.js",
+    "tokens.scss"
+  ]
+}
