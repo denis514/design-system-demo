@@ -1,4 +1,4 @@
-# Design System (Plugin Test Only) — design tokens
+# Design System (Plugin Test Only)2 — design tokens
 
 Generated from Figma by Token Portal. 632 tokens.
 Do not edit these files by hand — the next export overwrites them.
@@ -24,7 +24,7 @@ packages:
 Then add it to the project that uses it and install:
 
 ```bash
-npm install design-system-plugin-test-only-tokens@* --workspace <your app>
+npm install design-system-plugin-test-only-2-tokens@* --workspace <your app>
 ```
 
 ## Use it

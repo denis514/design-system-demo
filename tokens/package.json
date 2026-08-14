@@ -1,7 +1,7 @@
 {
-  "name": "design-system-plugin-test-only-tokens",
+  "name": "design-system-plugin-test-only-2-tokens",
   "version": "0.1.0",
-  "description": "Design tokens generated from \"Design System (Plugin Test Only)\".",
+  "description": "Design tokens generated from \"Design System (Plugin Test Only)2\".",
   "private": true,
   "sideEffects": [
     "tokens.scss"
