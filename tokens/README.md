@@ -67,6 +67,7 @@ These values change with screen width on their own — no attribute, no JavaScri
 
 ## What's inside
 
+- `CHANGELOG.md`
 - `package.json`
 - `tokens.d.ts`
 - `tokens.js`
