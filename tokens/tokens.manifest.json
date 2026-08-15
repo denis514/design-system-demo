@@ -11,6 +11,7 @@
   "configHash": "9893f1ca",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "README.md",
     "tokens.d.ts",
