@@ -1,6 +1,6 @@
 # Design System (Dev) — design tokens
 
-Generated from Figma by Token Portal. 643 tokens.
+Generated from Figma by Token Portal. 638 tokens.
 Do not edit these files by hand — the next export overwrites them.
 
 ## Install it
@@ -67,6 +67,7 @@ These values change with screen width on their own — no attribute, no JavaScri
 
 ## What's inside
 
+- `CHANGELOG.md`
 - `package.json`
 - `tokens.d.ts`
 - `tokens.js`
