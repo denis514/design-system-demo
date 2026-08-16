@@ -4,10 +4,22 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
-# The point of this workflow: when the plugin opens a pull request with new tokens, a change
-# that breaks the styling fails here instead of reaching production. That feedback loop is the
-# whole reason this repository exists.
+# One workflow, two jobs, and the second cannot start unless the first passed.
+#
+# It used to be two files racing each other on the same push. Both installed, both built, and
+# neither knew the other existed — so on 2026-08-16 a token file reached main holding
+# `var(--color-color-blue-400)` with no such property declared anywhere, CI caught it and failed,
+# and the deploy published the broken stylesheet anyway. A check that catches a fault and does not
+# stop it shipping is half a check.
+#
+# Merged rather than chained with `workflow_run`: that keeps the checks and the artefact in one
+# build instead of two, and avoids having to remember that a `workflow_run` job checks out the
+# default branch rather than the commit that triggered it.
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,3 +59,31 @@ jobs:
 
       - name: The responsive type scale survived
         run: grep -q 'min-width:1024px' dist/assets/*.css
+
+      # Only what passed the checks above is ever handed to the deploy job. On a pull request
+      # there is nothing to publish, so the upload is skipped and the checks still run.
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    # The whole point. `needs` makes publishing structurally impossible when a check failed.
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    # One deployment at a time; a queued run supersedes an older one rather than racing it.
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
