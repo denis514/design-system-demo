@@ -11,6 +11,7 @@
   "configHash": "b4c61cbd",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "README.md",
     "tokens.d.ts",
@@ -1692,27 +1693,6 @@
       },
       "valueHash": {
         "default": "92e9088a"
-      }
-    },
-    {
-      "key": "1d23bae28e748c82b78147d9f67a9a579a36ed68",
-      "path": [
-        "sticky-true"
-      ],
-      "type": "boolean",
-      "tier": "primitive",
-      "collection": "Prototype",
-      "outputNames": {
-        "css": "--sticky-true",
-        "scss": "$sticky-true"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$sticky-true"
-      },
-      "emittedValue": "true",
-      "valueHash": {
-        "4169:0": "2e9e364d"
       }
     },
     {
@@ -6595,28 +6575,6 @@
       }
     },
     {
-      "key": "6bf33e2aa919101ee7042bcddd07ed8b926b33d0",
-      "path": [
-        "checkout",
-        "shipping-address"
-      ],
-      "type": "boolean",
-      "tier": "primitive",
-      "collection": "Prototype",
-      "outputNames": {
-        "css": "--checkout-shipping-address",
-        "scss": "$checkout-shipping-address"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$checkout-shipping-address"
-      },
-      "emittedValue": "true",
-      "valueHash": {
-        "4169:0": "2e9e364d"
-      }
-    },
-    {
       "key": "6c1af2dc96e2b82ea11131f26f07b3530c923f69",
       "path": [
         "surface",
@@ -6683,28 +6641,6 @@
       "emittedValue": "var(--color-red-150)",
       "valueHash": {
         "3680:1": "badb0db1"
-      }
-    },
-    {
-      "key": "6c4f224c32371241a3fa8466bfbf824e43dbd08c",
-      "path": [
-        "accordion",
-        "left-icon"
-      ],
-      "type": "boolean",
-      "tier": "primitive",
-      "collection": "Prototype",
-      "outputNames": {
-        "css": "--accordion-left-icon",
-        "scss": "$accordion-left-icon"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$accordion-left-icon"
-      },
-      "emittedValue": "true",
-      "valueHash": {
-        "4169:0": "2e9e364d"
       }
     },
     {
@@ -9633,29 +9569,6 @@
       }
     },
     {
-      "key": "9cf05ff776c23f4d0bcbf7a788ca01812e731063",
-      "path": [
-        "checkout",
-        "payment-1",
-        "credit-card"
-      ],
-      "type": "boolean",
-      "tier": "primitive",
-      "collection": "Prototype",
-      "outputNames": {
-        "css": "--checkout-payment-1-credit-card",
-        "scss": "$checkout-payment-1-credit-card"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$checkout-payment-1-credit-card"
-      },
-      "emittedValue": "true",
-      "valueHash": {
-        "4169:0": "2e9e364d"
-      }
-    },
-    {
       "key": "9d807d1ff98eeead064c25cecfa040ad728f8daa",
       "path": [
         "headline-4",
@@ -12550,27 +12463,6 @@
       "emittedValue": "var(--color-yellow-800)",
       "valueHash": {
         "3681:0": "f1f61b1d"
-      }
-    },
-    {
-      "key": "d82710fef511e7637531a6e2a30f966d39197eb2",
-      "path": [
-        "sticky-false"
-      ],
-      "type": "boolean",
-      "tier": "primitive",
-      "collection": "Prototype",
-      "outputNames": {
-        "css": "--sticky-false",
-        "scss": "$sticky-false"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$sticky-false"
-      },
-      "emittedValue": "false",
-      "valueHash": {
-        "4169:0": "822c1218"
       }
     },
     {
