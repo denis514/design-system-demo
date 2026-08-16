@@ -8,7 +8,7 @@
     "name": "token-portal",
     "version": "0.1.0"
   },
-  "configHash": "9893f1ca",
+  "configHash": "b4c61cbd",
   "profile": "scss",
   "files": [
     "CHANGELOG.md",
@@ -778,6 +778,29 @@
       }
     },
     {
+      "key": "0deb59058f37c6813d86637bf995a862ea8bb703",
+      "path": [
+        "color",
+        "blue",
+        "150"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-150",
+        "scss": "$color-blue-150"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-150"
+      },
+      "emittedValue": "#b8d4f8",
+      "valueHash": {
+        "1293:0": "7bf81fde"
+      }
+    },
+    {
       "key": "0eb7c375a8245f62c52d457e8fc2c8a99d422b8e",
       "path": [
         "headline-2",
@@ -981,7 +1004,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "08204966"
+        "3680:1": "25e42799"
       }
     },
     {
@@ -1187,7 +1210,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "08204966"
+        "3680:1": "25e42799"
       }
     },
     {
@@ -1607,6 +1630,29 @@
       }
     },
     {
+      "key": "1b5e84db696b4eb959858bcf314bde54be877e8f",
+      "path": [
+        "color",
+        "blue",
+        "500"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-500",
+        "scss": "$color-blue-500"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-500"
+      },
+      "emittedValue": "#1a73e8",
+      "valueHash": {
+        "1293:0": "14e6b1f8"
+      }
+    },
+    {
       "key": "1bdbc2ec268d2464dc92b65227a0da80d487b58b",
       "path": [
         "body-14",
@@ -1851,6 +1897,29 @@
       }
     },
     {
+      "key": "205bbc8e255531290f9518a415d122100e22cd88",
+      "path": [
+        "color",
+        "blue",
+        "200"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-200",
+        "scss": "$color-blue-200"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-200"
+      },
+      "emittedValue": "#96bff4",
+      "valueHash": {
+        "1293:0": "145e9253"
+      }
+    },
+    {
       "key": "2066188a1df0f82668d440248e2a9699cd2f41f3",
       "path": [
         "headline-1",
@@ -1916,7 +1985,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "b52574e9"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -3011,6 +3080,29 @@
       }
     },
     {
+      "key": "31895c75436f0030890df45d7f98b74eb555dc33",
+      "path": [
+        "color",
+        "blue",
+        "900"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-900",
+        "scss": "$color-blue-900"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-900"
+      },
+      "emittedValue": "#0b3061",
+      "valueHash": {
+        "1293:0": "b5abe5bb"
+      }
+    },
+    {
       "key": "31d0bc6ffde15f67656a563e5cedf13b694895a0",
       "path": [
         "color",
@@ -3670,6 +3762,29 @@
       "emittedValue": "var(--semantic-error-150)",
       "valueHash": {
         "3681:0": "29410af6"
+      }
+    },
+    {
+      "key": "3ca1916d5ac7d10f1abf0093325ca5281ffd124d",
+      "path": [
+        "color",
+        "blue",
+        "300"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-300",
+        "scss": "$color-blue-300"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-300"
+      },
+      "emittedValue": "#66a1f0",
+      "valueHash": {
+        "1293:0": "8257953a"
       }
     },
     {
@@ -4848,6 +4963,29 @@
       }
     },
     {
+      "key": "522350c08969dcae2821e63c7a7728b0cfed12ab",
+      "path": [
+        "color",
+        "blue",
+        "400"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-400",
+        "scss": "$color-blue-400"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-400"
+      },
+      "emittedValue": "#488fed",
+      "valueHash": {
+        "1293:0": "a94786e7"
+      }
+    },
+    {
       "key": "52f2e4b68a4915ed1c402ac2c1ce3034fc0c79a7",
       "path": [
         "icon",
@@ -5539,6 +5677,29 @@
       }
     },
     {
+      "key": "5d0676fbf7b6712f83bcef81917ab8571018c0e9",
+      "path": [
+        "color",
+        "blue",
+        "100"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-100",
+        "scss": "$color-blue-100"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-100"
+      },
+      "emittedValue": "#f6faff",
+      "valueHash": {
+        "1293:0": "6fcecebc"
+      }
+    },
+    {
       "key": "5d2a4833870f67e0d278e4e8f6819b8cb52480ee",
       "path": [
         "text",
@@ -5899,9 +6060,9 @@
         "kind": "declaration",
         "name": "$color-brand-500"
       },
-      "emittedValue": "#0ca62e",
+      "emittedValue": "#002b66",
       "valueHash": {
-        "1293:0": "edab2cc5"
+        "1293:0": "dd0a27e0"
       }
     },
     {
@@ -7797,6 +7958,29 @@
       }
     },
     {
+      "key": "833935888f97f688afb7f8ad6344ad9636e69516",
+      "path": [
+        "color",
+        "blue",
+        "800"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-800",
+        "scss": "$color-blue-800"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-800"
+      },
+      "emittedValue": "#0e3f80",
+      "valueHash": {
+        "1293:0": "58240905"
+      }
+    },
+    {
       "key": "838f478d059182a67322200391642be97dc361f3",
       "path": [
         "display-xl",
@@ -8141,6 +8325,29 @@
       }
     },
     {
+      "key": "8846dbb711774fadf6b3f281af9dd18e54f4d669",
+      "path": [
+        "color",
+        "blue",
+        "125"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-125",
+        "scss": "$color-blue-125"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-125"
+      },
+      "emittedValue": "#e8f1fd",
+      "valueHash": {
+        "1293:0": "412b9051"
+      }
+    },
+    {
       "key": "8890d57d68102cc9269237040632723e5d4605cd",
       "path": [
         "headline-3",
@@ -8275,7 +8482,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "b52574e9"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -8872,7 +9079,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "b52574e9"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -10019,6 +10226,29 @@
       }
     },
     {
+      "key": "abee30a675078b9d6e217e8678bc2b070714f305",
+      "path": [
+        "color",
+        "blue",
+        "600"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-600",
+        "scss": "$color-blue-600"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-600"
+      },
+      "emittedValue": "#1869d3",
+      "valueHash": {
+        "1293:0": "a620ef7b"
+      }
+    },
+    {
       "key": "ada9a5fd715ed640ad1cc2bfd33b16016dccf049",
       "path": [
         "surface",
@@ -10061,7 +10291,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "b52574e9"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -10632,6 +10862,29 @@
       "emittedValue": "var(--color-yellow-400)",
       "valueHash": {
         "3681:0": "67fba53c"
+      }
+    },
+    {
+      "key": "b5b0e6a91bb336cfb29e1cf1acafea77540f4f55",
+      "path": [
+        "color",
+        "blue",
+        "700"
+      ],
+      "type": "color",
+      "tier": "primitive",
+      "collection": "Color",
+      "outputNames": {
+        "css": "--color-blue-700",
+        "scss": "$color-blue-700"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$color-blue-700"
+      },
+      "emittedValue": "#1252a5",
+      "valueHash": {
+        "1293:0": "c35277d4"
       }
     },
     {
@@ -11616,7 +11869,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "b52574e9"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -13772,7 +14025,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3681:0": "08204966"
+        "3681:0": "25e42799"
       }
     },
     {
