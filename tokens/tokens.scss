@@ -183,6 +183,10 @@
     --font-2-regular: 400;
     --font-2-semibold: 600;
 
+    /* Effect styles · semantic */
+    --focus-alert: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-outline-focusring-brand), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
+    --focus-base: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-outline-focusring-brand), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
+
     /* Semantic · semantic */
     --semantic-border-radius-50: var(--size-50);
     --semantic-border-radius-100: var(--size-100);
@@ -636,10 +640,6 @@
     --text-warning-high-contrast: var(--semantic-warning-900);
     --text-warning-on-color: var(--semantic-warning-150);
     --text-warning-on-color-hover: var(--semantic-warning-125);
-
-    /* Styles · semantic */
-    --focus-alert: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-outline-focusring-brand), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
-    --focus-base: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-outline-focusring-brand), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
   }
 
   /* Typography Settings · Desktop */
@@ -837,6 +837,10 @@ $font-2-light: var(--font-2-light);
 $font-2-manrope: var(--font-2-manrope);
 $font-2-regular: var(--font-2-regular);
 $font-2-semibold: var(--font-2-semibold);
+
+// Effect styles · semantic
+$focus-alert: var(--focus-alert);
+$focus-base: var(--focus-base);
 
 // Semantic · semantic
 $semantic-border-radius-50: var(--semantic-border-radius-50);
@@ -1291,10 +1295,6 @@ $text-warning-default-hover: var(--text-warning-default-hover);
 $text-warning-high-contrast: var(--text-warning-high-contrast);
 $text-warning-on-color: var(--text-warning-on-color);
 $text-warning-on-color-hover: var(--text-warning-on-color-hover);
-
-// Styles · semantic
-$focus-alert: var(--focus-alert);
-$focus-base: var(--focus-base);
 
 // Typography — @include these in your own selectors
 
