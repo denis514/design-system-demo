@@ -2146,9 +2146,9 @@
         "kind": "declaration",
         "name": "$focus-alert"
       },
-      "emittedValue": "var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-outline-focusring-brand), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white)",
+      "emittedValue": "var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-blue-500), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white)",
       "valueHash": {
-        "default": "73554c2e"
+        "default": "6354d6cc"
       }
     },
     {
@@ -9476,30 +9476,6 @@
       }
     },
     {
-      "key": "9ae6bde760f43892adf5c2165d7a266c554974fd",
-      "path": [
-        "color",
-        "color",
-        "blue",
-        "400"
-      ],
-      "type": "color",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-color-blue-400",
-        "scss": "$color-color-blue-400"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-color-blue-400"
-      },
-      "emittedValue": "#488fed",
-      "valueHash": {
-        "1293:0": "a94786e7"
-      }
-    },
-    {
       "key": "9b6d957730d832a08ce7882ecdc4a0a94c8ba67b",
       "path": [
         "icon",
@@ -12096,30 +12072,6 @@
       "valueHash": {
         "3735:0": "8cff66dd",
         "3736:1": "18aa8d5d"
-      }
-    },
-    {
-      "key": "d3905f670b139ac17ed842ef5b8394634581e830",
-      "path": [
-        "color",
-        "outline",
-        "focusring",
-        "brand"
-      ],
-      "type": "color",
-      "tier": "semantic",
-      "collection": "Semantic [B]",
-      "outputNames": {
-        "css": "--color-outline-focusring-brand",
-        "scss": "$color-outline-focusring-brand"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-outline-focusring-brand"
-      },
-      "emittedValue": "var(--color-color-blue-400)",
-      "valueHash": {
-        "1370:0": "6cfe3b97"
       }
     },
     {
