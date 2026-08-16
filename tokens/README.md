@@ -1,6 +1,6 @@
 # Design System (Dev) — design tokens
 
-Generated from Figma by Token Portal. 638 tokens.
+Generated from Figma by Token Portal. 636 tokens.
 Do not edit these files by hand — the next export overwrites them.
 
 ## Install it
@@ -45,8 +45,8 @@ Then, anywhere in your styles:
 @use 'tokens' as tokens;
 
 .button {
-  background: tokens.$color-outline-focusring-brand;
-  /* or, without SCSS: background: var(--color-outline-focusring-brand); */
+  background: tokens.$semantic-brand-primary-100;
+  /* or, without SCSS: background: var(--semantic-brand-primary-100); */
 }
 ```
 
