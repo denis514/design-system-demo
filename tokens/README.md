@@ -1,6 +1,6 @@
 # Design System (Dev) — design tokens
 
-Generated from Figma by Token Portal. 636 tokens.
+Generated from Figma by Token Portal. 638 tokens.
 Do not edit these files by hand — the next export overwrites them.
 
 ## Install it
@@ -34,7 +34,7 @@ Point Sass at this folder once. In Vite:
 ```js
 css: {
   preprocessorOptions: {
-    scss: { loadPaths: ['tokens'] },
+    scss: { loadPaths: ['node_modules/design-system-dev-tokens'] },
   },
 }
 ```
@@ -45,8 +45,8 @@ Then, anywhere in your styles:
 @use 'tokens' as tokens;
 
 .button {
-  background: tokens.$semantic-brand-primary-100;
-  /* or, without SCSS: background: var(--semantic-brand-primary-100); */
+  background: tokens.$color-outline-focusring-brand;
+  /* or, without SCSS: background: var(--color-outline-focusring-brand); */
 }
 ```
 
