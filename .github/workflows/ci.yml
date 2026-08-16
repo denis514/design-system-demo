@@ -60,6 +60,51 @@ jobs:
       - name: The responsive type scale survived
         run: grep -q 'min-width:1024px' dist/assets/*.css
 
+      # ---------------------------------------------------------------- what gets published
+      #
+      # The site is the plugin's own preview page, not the demo above.
+      #
+      # The demo is written against this design system's token names — 33 variables and 27 mixins
+      # by name — so it compiles only for this file and no other. That is exactly what makes it a
+      # good *check* and a poor *page*: `pnpm run build` fails the moment a token is renamed, and
+      # nothing else in this repository would notice. So it stays, and stops being published.
+      #
+      # `preview.html` is the opposite: self-contained, no build, and it works on any design system
+      # because it is generated from whatever the file holds.
+      - name: The preview page has been published
+        run: |
+          if [ ! -f tokens/preview.html ]; then
+            echo "tokens/preview.html is missing."
+            echo
+            echo "In the plugin, on the Export tab, tick 'Also write a preview page' and publish."
+            echo "Until then there is no site to deploy."
+            exit 1
+          fi
+
+      # The preview inlines its whole stylesheet, so this checks precisely what ships — a stronger
+      # reading than the built demo gave, where the same fault could hide in an unused file.
+      - name: Every custom property the preview references is also declared
+        run: |
+          PAGE=$(cat tokens/preview.html)
+          echo "$PAGE" | grep -o -- '--[a-z0-9-]*:' | sed 's/://' | sort -u > /tmp/p-declared.txt
+          echo "$PAGE" | grep -o 'var(--[a-z0-9-]*)' | sed 's/var(\(.*\))/\1/' | sort -u > /tmp/p-referenced.txt
+          MISSING=$(comm -23 /tmp/p-referenced.txt /tmp/p-declared.txt)
+          if [ -n "$MISSING" ]; then
+            echo "The published page references properties nothing declares:"
+            echo "$MISSING"
+            exit 1
+          fi
+          echo "$(wc -l < /tmp/p-declared.txt) properties declared, all references resolve"
+
+      - name: Assemble the site
+        if: github.event_name != 'pull_request'
+        run: |
+          mkdir -p _site
+          cp tokens/preview.html _site/index.html
+          # Served from a subpath, and a page that fetches nothing needs no base tag — but a
+          # 404 without one is a confusing way to find that out.
+          test -s _site/index.html
+
       # Only what passed the checks above is ever handed to the deploy job. On a pull request
       # there is nothing to publish, so the upload is skipped and the checks still run.
       - uses: actions/configure-pages@v5
@@ -67,7 +112,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
-          path: dist
+          path: _site
 
   deploy:
     # The whole point. `needs` makes publishing structurally impossible when a check failed.
