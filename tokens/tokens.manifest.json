@@ -8,11 +8,14 @@
     "name": "token-portal",
     "version": "0.1.0"
   },
-  "configHash": "b4c61cbd",
+  "configHash": "4fd30751",
   "profile": "scss",
   "files": [
     "package.json",
+    "preview.html",
     "README.md",
+    "showcase.html",
+    "tokens.css",
     "tokens.d.ts",
     "tokens.js",
     "tokens.manifest.json",

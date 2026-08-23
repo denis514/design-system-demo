@@ -4,15 +4,20 @@
   "description": "Design tokens generated from \"Design System (Dev)\".",
   "private": true,
   "sideEffects": [
+    "tokens.css",
     "tokens.scss"
   ],
   "exports": {
     ".": "./tokens.js",
+    "./css": "./tokens.css",
     "./js": "./tokens.js",
     "./scss": "./tokens.scss"
   },
   "types": "./tokens.d.ts",
   "files": [
+    "preview.html",
+    "showcase.html",
+    "tokens.css",
     "tokens.d.ts",
     "tokens.js",
     "tokens.scss"
