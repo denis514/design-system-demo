@@ -60,6 +60,14 @@ jobs:
       - name: The responsive type scale survived
         run: grep -q 'min-width:1024px' dist/assets/*.css
 
+      # The token pages ride along under /tokens/: the live showcase, the reference preview and
+      # the stylesheet the showcase reads. Straight copies of what the plugin published — the
+      # site build does not touch them.
+      - name: Token pages into the artifact
+        run: |
+          mkdir -p dist/tokens
+          cp tokens/showcase.html tokens/preview.html tokens/tokens.css dist/tokens/
+
       # Only what passed the checks above is ever handed to the deploy job. On a pull request
       # there is nothing to publish, so the upload is skipped and the checks still run.
       - uses: actions/configure-pages@v5
