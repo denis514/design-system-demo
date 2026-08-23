@@ -1004,7 +1004,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "ed9f4f0d"
+        "3680:1": "25e42799"
       }
     },
     {
@@ -1210,7 +1210,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "ed9f4f0d"
+        "3680:1": "25e42799"
       }
     },
     {
@@ -1964,7 +1964,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "699903c4"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -6039,9 +6039,9 @@
         "kind": "declaration",
         "name": "$color-brand-500"
       },
-      "emittedValue": "#e40000",
+      "emittedValue": "#002b66",
       "valueHash": {
-        "1293:0": "97739b48"
+        "1293:0": "dd0a27e0"
       }
     },
     {
@@ -8417,7 +8417,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "699903c4"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -9014,7 +9014,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "699903c4"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -10179,7 +10179,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "699903c4"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -11757,7 +11757,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "699903c4"
+        "3681:0": "7a72194c"
       }
     },
     {
@@ -13868,7 +13868,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3681:0": "ed9f4f0d"
+        "3681:0": "25e42799"
       }
     },
     {
