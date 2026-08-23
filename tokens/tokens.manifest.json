@@ -11,6 +11,7 @@
   "configHash": "b4c61cbd",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "README.md",
     "tokens.d.ts",
@@ -1003,7 +1004,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "25e42799"
+        "3680:1": "ed9f4f0d"
       }
     },
     {
@@ -1209,7 +1210,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "25e42799"
+        "3680:1": "ed9f4f0d"
       }
     },
     {
@@ -1963,7 +1964,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "7a72194c"
+        "3681:0": "699903c4"
       }
     },
     {
@@ -6038,9 +6039,9 @@
         "kind": "declaration",
         "name": "$color-brand-500"
       },
-      "emittedValue": "#002b66",
+      "emittedValue": "#e40000",
       "valueHash": {
-        "1293:0": "dd0a27e0"
+        "1293:0": "97739b48"
       }
     },
     {
@@ -8416,7 +8417,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "7a72194c"
+        "3681:0": "699903c4"
       }
     },
     {
@@ -9013,7 +9014,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "7a72194c"
+        "3681:0": "699903c4"
       }
     },
     {
@@ -10178,7 +10179,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "7a72194c"
+        "3681:0": "699903c4"
       }
     },
     {
@@ -11756,7 +11757,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "7a72194c"
+        "3681:0": "699903c4"
       }
     },
     {
@@ -13867,7 +13868,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3681:0": "25e42799"
+        "3681:0": "ed9f4f0d"
       }
     },
     {
