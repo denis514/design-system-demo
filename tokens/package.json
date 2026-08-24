@@ -1,6 +1,6 @@
 {
   "name": "design-system-dev-tokens",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Design tokens generated from \"Design System (Dev)\".",
   "private": true,
   "sideEffects": [
