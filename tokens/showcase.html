@@ -9,6 +9,9 @@
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font:14px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 code{font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace}
+.s-themes{display:inline-flex;gap:4px;margin-left:auto;padding:3px;border:1px solid #e5e5e5;border-radius:999px}
+.s-theme{padding:4px 12px;border:0;border-radius:999px;background:transparent;font:inherit;font-size:13px;cursor:pointer}
+.s-theme-on{background:#111;color:#fff}
 .s-bar{position:sticky;top:0;z-index:1;display:flex;gap:16px;align-items:center;padding:12px 24px;border-bottom:1px solid #e5e5e5;background:#fff}
 .s-bar-name{font-weight:600}
 .s-bar-note{flex:1;color:#666;font-size:12px}
@@ -49,6 +52,7 @@ code{font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace}
 <header class="s-bar">
 <span class="s-bar-name">Design System (Dev)</span>
 <span class="s-bar-note">Live — this page reads <code>tokens.css</code> beside it. Change a value there and reload.</span>
+
 <a class="s-bar-link" href="preview.html">Every token →</a>
 </header>
 <main class="s-main">
