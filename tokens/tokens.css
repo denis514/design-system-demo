@@ -11,7 +11,7 @@
     --color-blue-200: #96bff4;
     --color-blue-300: #66a1f0;
     --color-blue-400: #488fed;
-    --color-blue-500: #272e24;
+    --color-blue-500: #1a73e8;
     --color-blue-600: #1869d3;
     --color-blue-700: #1252a5;
     --color-blue-800: #0e3f80;
@@ -33,19 +33,19 @@
     --color-brand-200: #8a9fbd;
     --color-brand-300: #54749f;
     --color-brand-400: #33598d;
-    --color-brand-500: #e30a11;
+    --color-brand-500: #002b66;
     --color-brand-600: #002b66;
     --color-brand-700: #002150;
     --color-brand-800: #001a3e;
     --color-brand-900: #00142f;
     --color-crimson-100: #fffbfb;
     --color-crimson-125: #fff8f9;
-    --color-crimson-150: #8aa57b;
+    --color-crimson-150: #fee9ea;
     --color-crimson-200: #fdc7ca;
     --color-crimson-300: #fca6aa;
     --color-crimson-400: #fa8086;
     --color-crimson-500: #f94b53;
-    --color-crimson-600: #005b24;
+    --color-crimson-600: #d3323a;
     --color-crimson-700: #b32b31;
     --color-crimson-800: #902228;
     --color-crimson-900: #6b1a1d;
@@ -78,7 +78,7 @@
     --color-green-300: #5ed0b4;
     --color-green-400: #16ba92;
     --color-green-500: #009e77;
-    --color-green-600: #8414e7;
+    --color-green-600: #008161;
     --color-green-700: #006d52;
     --color-green-800: #005742;
     --color-green-900: #004131;
@@ -146,16 +146,16 @@
     --size-950: 36px;
     --size-1000: 40px;
     --size-1100: 48px;
-    --size-1200: 156px;
+    --size-1200: 56px;
     --size-1300: 64px;
-    --size-1400: 172px;
+    --size-1400: 72px;
     --size-1425: 76px;
-    --size-1450: 180px;
+    --size-1450: 80px;
     --size-1475: 88px;
-    --size-1500: 196px;
+    --size-1500: 96px;
     --size-1600: 128px;
     --size-1700: 256px;
-    --size-1800: 1512px;
+    --size-1800: 512px;
 
     /* Typography · primitive */
     --font-1-bold: 700;
