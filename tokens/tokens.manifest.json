@@ -11,6 +11,7 @@
   "configHash": "4fd30751",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "preview.html",
     "README.md",
@@ -3078,9 +3079,9 @@
         "kind": "declaration",
         "name": "$color-blue-900"
       },
-      "emittedValue": "#0b3061",
+      "emittedValue": "#b0be30",
       "valueHash": {
-        "1293:0": "b5abe5bb"
+        "1293:0": "818eaa59"
       }
     },
     {

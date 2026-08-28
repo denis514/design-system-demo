@@ -9,10 +9,10 @@
     --color-blue-125: #e8f1fd;
     --color-blue-150: #b8d4f8;
     --color-blue-200: #96bff4;
-    --color-blue-300: #2e6c5c;
+    --color-blue-300: #66a1f0;
     --color-blue-400: #488fed;
     --color-blue-500: #1a73e8;
-    --color-blue-600: #18d334;
+    --color-blue-600: #1869d3;
     --color-blue-700: #1252a5;
     --color-blue-800: #0e3f80;
     --color-blue-900: #b0be30;
@@ -137,28 +137,28 @@
     --size-100: 4px;
     --size-150: 6px;
     --size-200: 8px;
-    --size-300: 212px;
+    --size-300: 12px;
     --size-400: 16px;
     --size-500: 20px;
-    --size-700: 224px;
+    --size-700: 24px;
     --size-800: 28px;
     --size-900: 32px;
     --size-950: 36px;
     --size-1000: 40px;
-    --size-1100: 248px;
-    --size-1200: 256px;
+    --size-1100: 48px;
+    --size-1200: 56px;
     --size-1300: 64px;
     --size-1400: 72px;
-    --size-1425: 276px;
+    --size-1425: 76px;
     --size-1450: 80px;
     --size-1475: 88px;
-    --size-1500: 296px;
+    --size-1500: 96px;
     --size-1600: 128px;
     --size-1700: 256px;
     --size-1800: 512px;
 
     /* Typography · primitive */
-    --font-1-bold: 500;
+    --font-1-bold: 700;
     --font-1-extrabold: 800;
     --font-1-extralight: 200;
     --font-1-light: 300;
