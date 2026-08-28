@@ -3079,9 +3079,9 @@
         "kind": "declaration",
         "name": "$color-blue-900"
       },
-      "emittedValue": "#b0be30",
+      "emittedValue": "#0b3061",
       "valueHash": {
-        "1293:0": "818eaa59"
+        "1293:0": "b5abe5bb"
       }
     },
     {
