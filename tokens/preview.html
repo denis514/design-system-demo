@@ -130,6 +130,9 @@ col.p-c4{width:auto}
   background-size:12px 12px;background-position:0 0,6px 6px}
 .p-chip--inline{width:20px;height:20px;border-radius:3px}
 .p-chip--frost{position:relative;overflow:hidden;background:conic-gradient(#d1d5db 25%,#fff 0 50%,#d1d5db 0 75%,#fff 0) 0 0/8px 8px}
+/* A bold letter on the ground, nearly the chip's height, so the frosted layer above has
+   something legible to blur — a checkerboard alone never shows how strong a blur is. */
+.p-chip--frost::before{content:"A";position:absolute;inset:0;display:grid;place-items:center;color:#111;font-weight:800;font-size:17px;line-height:1}
 .p-chip--frost i{position:absolute;inset:0;display:block}
 
 /*
@@ -150,6 +153,8 @@ html:not(.p-list) .p-tokens--chips .p-c-value{order:1}
 html:not(.p-list) .p-tokens--chips .p-c-role,html:not(.p-list) .p-tokens--chips .p-c-scale{display:none}
 html:not(.p-list) .p-tokens--chips .p-inline{flex-direction:column;align-items:stretch;gap:8px}
 html:not(.p-list) .p-tokens--chips .p-chip--inline{width:100%;height:118px;border-radius:14px}
+html:not(.p-list) .p-tokens--chips .p-chip--frost{background-size:16px 16px}
+html:not(.p-list) .p-tokens--chips .p-chip--frost::before{font-size:104px}
 html:not(.p-list) .p-tokens--chips .p-inline .p-copy{margin-left:0;align-self:flex-start}
 
 /* Visible on hover and on focus; always visible where there is no hover to speak of. */
