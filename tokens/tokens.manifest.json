@@ -11,6 +11,7 @@
   "configHash": "4fd30751",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "preview.html",
     "README.md",
@@ -1006,7 +1007,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "44d5c3e7"
+        "3680:1": "be2be7d5"
       }
     },
     {
@@ -1212,7 +1213,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "44d5c3e7"
+        "3680:1": "be2be7d5"
       }
     },
     {
@@ -1966,7 +1967,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "d39267ca"
+        "3681:0": "038962b6"
       }
     },
     {
@@ -6041,9 +6042,9 @@
         "kind": "declaration",
         "name": "$color-brand-500"
       },
-      "emittedValue": "#ff0059",
+      "emittedValue": "#002e6f",
       "valueHash": {
-        "1293:0": "93634fb6"
+        "1293:0": "1e617fe2"
       }
     },
     {
@@ -8419,7 +8420,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "d39267ca"
+        "3681:0": "038962b6"
       }
     },
     {
@@ -9016,7 +9017,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "d39267ca"
+        "3681:0": "038962b6"
       }
     },
     {
@@ -10181,7 +10182,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "d39267ca"
+        "3681:0": "038962b6"
       }
     },
     {
@@ -11759,7 +11760,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "d39267ca"
+        "3681:0": "038962b6"
       }
     },
     {
@@ -13870,7 +13871,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3681:0": "44d5c3e7"
+        "3681:0": "be2be7d5"
       }
     },
     {
