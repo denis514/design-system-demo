@@ -40,7 +40,10 @@ main{display:flex;flex-direction:column;gap:24px;padding:24px 40px 96px;min-widt
   body{grid-template-columns:1fr}
   .p-side{position:static;height:auto}
   main{gap:16px;padding:0 16px 64px}
+  .p-toolbar{right:16px}
   .p-acc{border-radius:20px;padding:0 28px}
+  .p-acc-head{padding:32px 0}
+  .p-acc-body{padding:0 0 40px}
 }
 
 .p-head{margin-bottom:28px}
@@ -60,8 +63,7 @@ main{display:flex;flex-direction:column;gap:24px;padding:24px 40px 96px;min-widt
 .p-toc-more:hover{background:none}
 
 /* The strip above the collections. Not .p-bar, which is the scale bar inside a table row. */
-.p-toolbar{position:sticky;top:16px;z-index:6;display:flex;justify-content:flex-end;gap:8px;height:0;margin:0;padding:0;overflow:visible}
-.p-toolbar>*{align-self:flex-start}
+.p-toolbar{position:fixed;top:16px;right:40px;z-index:6;display:flex;gap:8px}
 .p-views{display:flex;gap:2px;padding:3px;border-radius:999px;background:#fff;box-shadow:0 4px 14px rgba(17,17,17,.16)}
 .p-view{padding:4px 13px;border:0;border-radius:999px;background:transparent;color:#374151;font:inherit;font-size:12px;cursor:pointer}
 .p-view[aria-pressed=true]{background:#111;color:#fff}
@@ -81,7 +83,7 @@ main{display:flex;flex-direction:column;gap:24px;padding:24px 40px 96px;min-widt
   and body share one edge.
 */
 .p-acc{margin:0;border:0;border-radius:28px;background:var(--p-panel);padding:0 64px}
-.p-acc-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;padding:34px 0 30px;cursor:pointer;list-style:none}
+.p-acc-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;padding:48px 0;cursor:pointer;list-style:none}
 .p-acc-head::-webkit-details-marker{display:none}
 .p-acc-head::before{content:"";flex:none;width:7px;height:7px;border-right:1.5px solid #595959;border-bottom:1.5px solid #595959;transform:rotate(-45deg);transition:transform .12s}
 .p-acc[open]>.p-acc-head::before{transform:rotate(45deg)}
@@ -90,7 +92,7 @@ main{display:flex;flex-direction:column;gap:24px;padding:24px 40px 96px;min-widt
 .p-tags{display:flex;flex-wrap:wrap;gap:6px}
 .p-tag{padding:2px 9px;border:0;border-radius:999px;background:var(--p-line-soft);color:var(--p-ink-2);font-size:10.5px;white-space:nowrap}
 .p-tag--lib{border-color:#c2d4f0;background:#eef3fc;color:#1a4480}
-.p-acc-body{padding:6px 0 52px;border-top:0}
+.p-acc-body{padding:0 0 64px;border-top:0}
 .p-block{margin-bottom:28px}
 .p-block-h{display:flex;align-items:baseline;gap:8px;margin:0 0 10px;color:var(--p-ink-3);font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em}
 .p-block-n{font-size:11px;font-weight:400}
