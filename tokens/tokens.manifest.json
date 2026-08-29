@@ -1007,7 +1007,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "be2be7d5"
+        "3680:1": "1978b1fc"
       }
     },
     {
@@ -1213,7 +1213,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3680:1": "be2be7d5"
+        "3680:1": "1978b1fc"
       }
     },
     {
@@ -1967,7 +1967,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "7519cf2b"
       }
     },
     {
@@ -2133,28 +2133,6 @@
       }
     },
     {
-      "key": "23b9019d16fcd309db8a558597c2b4217b6fd5e7",
-      "path": [
-        "focus",
-        "alert"
-      ],
-      "type": "shadow",
-      "tier": "semantic",
-      "collection": "Effect styles",
-      "outputNames": {
-        "css": "--focus-alert",
-        "scss": "$focus-alert"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$focus-alert"
-      },
-      "emittedValue": "var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-blue-500), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white)",
-      "valueHash": {
-        "default": "6354d6cc"
-      }
-    },
-    {
       "key": "23c5e3327b940a16e68419a41a1d34a4556e0638",
       "path": [
         "headline-5-6",
@@ -2267,30 +2245,6 @@
       "emittedValue": "var(--size-0)",
       "valueHash": {
         "3680:1": "1c3da11e"
-      }
-    },
-    {
-      "key": "26e4a9a0b019d8a311e56161f35a94e55903087f",
-      "path": [
-        "color",
-        "size",
-        "positive",
-        "2"
-      ],
-      "type": "dimension",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-size-positive-2",
-        "scss": "$color-size-positive-2"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-size-positive-2"
-      },
-      "emittedValue": "2px",
-      "valueHash": {
-        "1293:0": "47ea9910"
       }
     },
     {
@@ -4345,6 +4299,27 @@
       }
     },
     {
+      "key": "47825bc4ba580593e55846980a46ccf91909966b",
+      "path": [
+        "gradient-1"
+      ],
+      "type": "gradient",
+      "tier": "semantic",
+      "collection": "Gradients",
+      "outputNames": {
+        "css": "--gradient-1",
+        "scss": "$gradient-1"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$gradient-1"
+      },
+      "emittedValue": "linear-gradient(128deg, #f1ce28 26%, #349456 75%)",
+      "valueHash": {
+        "default": "7a782b25"
+      }
+    },
+    {
       "key": "4812571063cca4595d035a457d3ecfb0ca2a1c3b",
       "path": [
         "color",
@@ -6042,9 +6017,9 @@
         "kind": "declaration",
         "name": "$color-brand-500"
       },
-      "emittedValue": "#002e6f",
+      "emittedValue": "#ff0004",
       "valueHash": {
-        "1293:0": "1e617fe2"
+        "1293:0": "7dca87f7"
       }
     },
     {
@@ -6710,6 +6685,27 @@
       "emittedValue": "#898e99",
       "valueHash": {
         "1293:0": "c03083d8"
+      }
+    },
+    {
+      "key": "6dc1741876d6d2b249af78e73d9eee83b3762c2b#blur",
+      "path": [
+        "background-blur"
+      ],
+      "type": "blur",
+      "tier": "semantic",
+      "collection": "Effect styles",
+      "outputNames": {
+        "css": "--background-blur",
+        "scss": "$background-blur"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$background-blur"
+      },
+      "emittedValue": "blur(38.9px)",
+      "valueHash": {
+        "default": "1be31369"
       }
     },
     {
@@ -8420,7 +8416,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "7519cf2b"
       }
     },
     {
@@ -9017,7 +9013,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "7519cf2b"
       }
     },
     {
@@ -10182,7 +10178,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "7519cf2b"
       }
     },
     {
@@ -11282,28 +11278,6 @@
       }
     },
     {
-      "key": "bfdc0d1bc9072dd0bb29e63113e1945a92885622",
-      "path": [
-        "focus",
-        "base"
-      ],
-      "type": "shadow",
-      "tier": "semantic",
-      "collection": "Effect styles",
-      "outputNames": {
-        "css": "--focus-base",
-        "scss": "$focus-base"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$focus-base"
-      },
-      "emittedValue": "var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-blue-500), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white)",
-      "valueHash": {
-        "default": "6354d6cc"
-      }
-    },
-    {
       "key": "c05356d585cdf4d49d71077ef60b4bb14a36c812",
       "path": [
         "surface",
@@ -11760,7 +11734,7 @@
       },
       "emittedValue": "var(--semantic-brand-500)",
       "valueHash": {
-        "3681:0": "038962b6"
+        "3681:0": "7519cf2b"
       }
     },
     {
@@ -12374,30 +12348,6 @@
       }
     },
     {
-      "key": "d792fa539bc59cdaf59487d3e809ca262be45025",
-      "path": [
-        "color",
-        "size",
-        "positive",
-        "0"
-      ],
-      "type": "dimension",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-size-positive-0",
-        "scss": "$color-size-positive-0"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-size-positive-0"
-      },
-      "emittedValue": "0",
-      "valueHash": {
-        "1293:0": "3b1a972a"
-      }
-    },
-    {
       "key": "d7d1b10d7bc6420d362b1671775430e5b25c91a2",
       "path": [
         "surface",
@@ -12641,6 +12591,27 @@
       "valueHash": {
         "3735:0": "18aa8d5d",
         "3736:1": "70f8106d"
+      }
+    },
+    {
+      "key": "dd0af3edf5e3cea7555c86714256f76e01fe6bdd#blur",
+      "path": [
+        "layer-blur"
+      ],
+      "type": "blur",
+      "tier": "semantic",
+      "collection": "Effect styles",
+      "outputNames": {
+        "css": "--layer-blur",
+        "scss": "$layer-blur"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$layer-blur"
+      },
+      "emittedValue": "blur(26.2px)",
+      "valueHash": {
+        "default": "d896eb87"
       }
     },
     {
@@ -13030,30 +13001,6 @@
       "emittedValue": "#f3fcfa",
       "valueHash": {
         "1293:0": "8a6b330a"
-      }
-    },
-    {
-      "key": "e47bc167eb057382ddc915ed54754733603e2674",
-      "path": [
-        "color",
-        "size",
-        "positive",
-        "4"
-      ],
-      "type": "dimension",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-size-positive-4",
-        "scss": "$color-size-positive-4"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-size-positive-4"
-      },
-      "emittedValue": "4px",
-      "valueHash": {
-        "1293:0": "56dac4d6"
       }
     },
     {
@@ -13871,7 +13818,7 @@
       },
       "emittedValue": "var(--color-brand-500)",
       "valueHash": {
-        "3681:0": "be2be7d5"
+        "3681:0": "1978b1fc"
       }
     },
     {

@@ -1,6 +1,6 @@
 # Design System (Dev) — design tokens
 
-Generated from Figma by Token Portal. 636 tokens.
+Generated from Figma by Token Portal. 634 tokens.
 Do not edit these files by hand — the next export overwrites them.
 
 ## Install it

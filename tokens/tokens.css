@@ -33,7 +33,7 @@
     --color-brand-200: #8a9fbd;
     --color-brand-300: #54749f;
     --color-brand-400: #33598d;
-    --color-brand-500: #002e6f;
+    --color-brand-500: #ff0004;
     --color-brand-600: #002b66;
     --color-brand-700: #002150;
     --color-brand-800: #001a3e;
@@ -104,9 +104,6 @@
     --color-red-700: #990000;
     --color-red-800: #770000;
     --color-red-900: #5b0000;
-    --color-size-positive-0: 0;
-    --color-size-positive-2: 2px;
-    --color-size-positive-4: 4px;
     --color-slate-100: #f5f6f6;
     --color-slate-125: #f0f1f2;
     --color-slate-150: #d1d3d8;
@@ -173,8 +170,11 @@
     --font-2-semibold: 600;
 
     /* Effect styles · semantic */
-    --focus-alert: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-blue-500), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
-    --focus-base: var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-4) var(--color-blue-500), var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-0) var(--color-size-positive-2) var(--color-foundations-white);
+    --background-blur: blur(38.9px); /* backdrop-filter */
+    --layer-blur: blur(26.2px); /* filter */
+
+    /* Gradients · semantic */
+    --gradient-1: linear-gradient(128deg, #f1ce28 26%, #349456 75%);
 
     /* Semantic · semantic */
     --semantic-border-radius-50: var(--size-50);
