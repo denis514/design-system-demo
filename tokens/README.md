@@ -67,7 +67,6 @@ These values change with screen width on their own — no attribute, no JavaScri
 
 ## What's inside
 
-- `CHANGELOG.md`
 - `package.json`
 - `preview.html`
 - `showcase.html`
