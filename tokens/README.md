@@ -1,6 +1,6 @@
 # Design System (Dev) — design tokens
 
-Generated from Figma by Token Portal. 624 tokens.
+Generated from Figma by Token Portal. 608 tokens.
 Do not edit these files by hand — the next export overwrites them.
 
 ## Install it
@@ -45,8 +45,8 @@ Then, anywhere in your styles:
 @use 'tokens' as tokens;
 
 .button {
-  background: tokens.$semantic-brand-primary-100;
-  /* or, without SCSS: background: var(--semantic-brand-primary-100); */
+  background: tokens.$semantic-brand-100;
+  /* or, without SCSS: background: var(--semantic-brand-100); */
 }
 ```
 
@@ -67,6 +67,7 @@ These values change with screen width on their own — no attribute, no JavaScri
 
 ## What's inside
 
+- `CHANGELOG.md`
 - `package.json`
 - `preview.html`
 - `showcase.html`
