@@ -144,20 +144,22 @@ col.p-c4{width:auto}
 */
 html:not(.p-list) .p-tokens--chips{display:block}
 html:not(.p-list) .p-tokens--chips colgroup,html:not(.p-list) .p-tokens--chips thead{display:none}
-html:not(.p-list) .p-tokens--chips tbody{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:26px 20px;margin-bottom:36px}
+html:not(.p-list) .p-tokens--chips tbody{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:40px 20px;margin-bottom:44px}
 html:not(.p-list) .p-tokens--chips tr{display:flex;flex-direction:column;min-width:0}
 html:not(.p-list) .p-tokens--chips tr:hover{background:none}
 html:not(.p-list) .p-tokens--chips th,html:not(.p-list) .p-tokens--chips td{padding:0;border:0}
 html:not(.p-list) .p-tokens--chips .p-subhead{grid-column:1/-1;margin:14px 0 -8px}
 html:not(.p-list) .p-tokens--chips .p-subhead th{display:flex;box-shadow:none}
-html:not(.p-list) .p-tokens--chips .p-c-name{order:2;margin-top:2px}
+html:not(.p-list) .p-tokens--chips .p-c-name{order:2;margin-top:0}
 html:not(.p-list) .p-tokens--chips .p-c-value{order:1}
 html:not(.p-list) .p-tokens--chips .p-c-role,html:not(.p-list) .p-tokens--chips .p-c-scale{display:none}
-html:not(.p-list) .p-tokens--chips .p-inline{flex-direction:column;align-items:stretch;gap:8px}
+html:not(.p-list) .p-tokens--chips .p-inline{position:relative;flex-direction:column;align-items:stretch;gap:6px}
 html:not(.p-list) .p-tokens--chips .p-chip--inline{width:100%;height:118px;border-radius:14px}
 html:not(.p-list) .p-tokens--chips .p-chip--frost{background-size:16px 16px}
 html:not(.p-list) .p-tokens--chips .p-chip--frost::before{font-size:104px}
-html:not(.p-list) .p-tokens--chips .p-inline .p-copy{margin-left:0;align-self:flex-start}
+/* The copy control floats centred on the tile itself, out of the text flow — the invisible
+   button used to hold the hex and the name apart (the user's finding). */
+html:not(.p-list) .p-tokens--chips .p-inline .p-copy{position:absolute;top:59px;left:50%;transform:translate(-50%,-50%);margin:0;padding:5px 14px;border:0;border-radius:999px;box-shadow:0 2px 10px rgba(17,17,17,.28)}
 
 /* Visible on hover and on focus; always visible where there is no hover to speak of. */
 .p-copy{flex:none;padding:2px 8px;border:1px solid #d4d4d4;border-radius:5px;background:#fff;color:#555;font:inherit;font-size:11px;cursor:pointer;opacity:0;transition:opacity .12s}
