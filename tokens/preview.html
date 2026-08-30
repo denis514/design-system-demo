@@ -6,7 +6,9 @@
 <title>Design System (Dev) — design tokens</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}
-:root{--p-ink:#111;--p-ink-2:#555;--p-ink-3:#8c8c8c;--p-line:#ececec;--p-line-soft:#f3f3f3;--p-ground:#e9e9e9;--p-panel:#fff}
+/* --p-ink-3 is #666: 4.73:1 on the grey ground, 5.74:1 on white — #8c8c8c measured 2.77:1
+   under the rail, on the page that reports contrast failures (the user's finding). */
+:root{--p-ink:#111;--p-ink-2:#555;--p-ink-3:#666;--p-line:#ececec;--p-line-soft:#f3f3f3;--p-ground:#e9e9e9;--p-panel:#fff}
 body{margin:0;background:var(--p-ground);color:var(--p-ink-2);font:13px/1.55 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
 
@@ -18,9 +20,9 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
 .p-value,.p-c-role{color:#595959}
 /* A token the stylesheet could not carry: shown, because it is in the design system, but not
    dressed up as a custom property it is not. */
-.p-absent{color:#767676;text-decoration:line-through}
+.p-absent{color:#666;text-decoration:line-through}
 .p-absent-note{font-size:12px;white-space:nowrap}
-.p-muted,.p-block-n,.p-family-n,.p-toc-n{color:#767676}
+.p-muted,.p-block-n,.p-family-n,.p-toc-n{color:#666}
 
 .p-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 :focus-visible{outline:2px solid #0b57d0;outline-offset:2px;border-radius:3px}
@@ -1086,7 +1088,7 @@ html:not(.p-list) .p-tokens--chips .p-inline .p-copy{margin-left:0;align-self:fl
 <section class="p-section" id="gradients"><details class="p-acc" open><summary class="p-acc-head"><h2>Gradients</h2><span class="p-tags"><span class="p-tag">semantic</span><span class="p-tag">1 gradients</span></span></summary><div class="p-acc-body"><div class="p-block"><table class="p-tokens p-tokens--chips"><caption class="p-sr">Gradients — 1 tokens</caption><colgroup><col class="p-c1"><col class="p-c2"><col class="p-c4"></colgroup><thead><tr><th scope="col">Token</th><th scope="col">Value</th><th scope="col">Role</th></tr></thead><tbody><tr><th scope="row" class="p-c-name"><code>--gradient-1</code></th><td class="p-c-value"><div class="p-inline"><span class="p-chip p-chip--inline" style="background:var(--gradient-1)"></span><span class="p-value">linear-gradient(128deg, #f1ce28 26%, #349456 75%)</span><button type="button" class="p-copy" data-copy="--gradient-1">Copy<span class="p-sr"> --gradient-1</span></button></div></td><td class="p-c-role">Test Gradien 1</td></tr></tbody></table></div></div></details></section>
 <section class="p-section" id="effect-styles"><details class="p-acc" open><summary class="p-acc-head"><h2>Effect styles</h2><span class="p-tags"><span class="p-tag">semantic</span><span class="p-tag">2 blurs</span></span></summary><div class="p-acc-body"><div class="p-block"><table class="p-tokens p-tokens--chips"><caption class="p-sr">Effect styles — 2 tokens</caption><colgroup><col class="p-c1"><col class="p-c2"><col class="p-c4"></colgroup><thead><tr><th scope="col">Token</th><th scope="col">Value</th><th scope="col">Role</th></tr></thead><tbody><tr><th scope="row" class="p-c-name"><code>--background-blur</code></th><td class="p-c-value"><div class="p-inline"><span class="p-chip p-chip--inline p-chip--frost"><i style="backdrop-filter:var(--background-blur);-webkit-backdrop-filter:var(--background-blur)"></i></span><span class="p-value">blur(38.9px)</span><button type="button" class="p-copy" data-copy="--background-blur">Copy<span class="p-sr"> --background-blur</span></button></div></td><td class="p-c-role">Background Blur</td></tr><tr><th scope="row" class="p-c-name"><code>--layer-blur</code></th><td class="p-c-value"><div class="p-inline"><span class="p-chip p-chip--inline p-chip--frost"><i style="backdrop-filter:var(--layer-blur);-webkit-backdrop-filter:var(--layer-blur)"></i></span><span class="p-value">blur(26.2px)</span><button type="button" class="p-copy" data-copy="--layer-blur">Copy<span class="p-sr"> --layer-blur</span></button></div></td><td class="p-c-role">Layer blur</td></tr></tbody></table></div></div></details></section>
 <section class="p-section" id="accessibility"><details class="p-acc" open><summary class="p-acc-head"><h2>Accessibility</h2></summary><div class="p-acc-body"><ul class="p-findings"><li><code>icon-discount-default-hover</code> &quot;icon-discount-default-hover&quot; is below WCAG AA on every surface — 4.48:1 on &quot;surface-on-color-heading&quot; and 3.85:1 on &quot;surface-brand-high-contrast&quot;.</li><li><code>icon-error-default-hover</code> &quot;icon-error-default-hover&quot; is below WCAG AA on every surface — 4.48:1 on &quot;surface-on-color-heading&quot; and 3.85:1 on &quot;surface-brand-high-contrast&quot;.</li><li><code>text-discount-default-hover</code> &quot;text-discount-default-hover&quot; is below WCAG AA on every surface — 4.48:1 on &quot;surface-on-color-heading&quot; and 3.85:1 on &quot;surface-brand-high-contrast&quot;.</li><li><code>text-error-default-hover</code> &quot;text-error-default-hover&quot; is below WCAG AA on every surface — 4.48:1 on &quot;surface-on-color-heading&quot; and 3.85:1 on &quot;surface-brand-high-contrast&quot;.</li></ul><p class="p-muted p-note">Measured against the extremes of this file, so no other surface would rescue a failure. Pairing text with a particular background is something Figma does not record, so nothing here guesses at combinations.</p></div></details></section>
-<footer class="p-foot">Generated by Token Portal. Every value on this page comes from the design system; the page's own styling does not.</footer>
+<footer class="p-foot">Generated by Token Portal. Token values are read from the Figma export; usage and contrast figures are computed from them. The page's own chrome uses no token.</footer>
 </main>
 <p class="p-sr" role="status" aria-live="polite" id="p-say"></p>
 <script data-token-portal>

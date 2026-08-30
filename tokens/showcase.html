@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="tokens.css">
 <style>
 *{box-sizing:border-box}
-:root{--ink:#111;--ink-2:#555;--ink-3:#8c8c8c;--line:#ececec;--line-soft:#f3f3f3;--ground:#e9e9e9;--panel:#fff}
+/* --ink-3 is #666, not lighter: measured 4.73:1 on the grey ground and 5.74:1 on the cards'
+   white — the old #8c8c8c stood at 2.77:1 under the rail (the user's finding). */
+:root{--ink:#111;--ink-2:#555;--ink-3:#666;--line:#ececec;--line-soft:#f3f3f3;--ground:#e9e9e9;--panel:#fff}
 body{margin:0;background:var(--ground);color:var(--ink-2);font:14px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 code{font:11.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}
 body{display:grid;grid-template-columns:236px minmax(0,1fr);align-items:start}
