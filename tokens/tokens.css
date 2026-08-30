@@ -20,13 +20,10 @@
     --color-brand-primary-125: #fef4eb;
     --color-brand-primary-150: #fcdbc0;
     --color-brand-primary-200: #fbcaa1;
-    --color-brand-primary-300: #f9b276;
     --color-brand-primary-400: #f8a35c;
     --color-brand-primary-500: #f68c33;
-    --color-brand-primary-600: #e07f2e;
     --color-brand-primary-700: #af6324;
     --color-brand-primary-800: #874d1c;
-    --color-brand-primary-900: #673b15;
     --color-brand-100: #ebeff5;
     --color-brand-125: #e6eaf1;
     --color-brand-150: #b0bfd3;
@@ -171,6 +168,7 @@
 
     /* Effect styles · semantic */
     --background-blur: blur(38.9px); /* backdrop-filter */
+    --beautiful-shadow: 11px 21px 52px 0 #0000001a, 46px 82px 94px 0 #00000017, 103px 185px 127px 0 #0000000d, 182px 329px 150px 0 #00000003, 285px 514px 164px 0 #00000000;
     --layer-blur: blur(26.2px); /* filter */
 
     /* Gradients · semantic */
@@ -194,13 +192,10 @@
     --semantic-brand-primary-125: var(--color-brand-primary-125);
     --semantic-brand-primary-150: var(--color-brand-primary-150);
     --semantic-brand-primary-200: var(--color-brand-primary-200);
-    --semantic-brand-primary-300: var(--color-brand-primary-300);
     --semantic-brand-primary-400: var(--color-brand-primary-400);
     --semantic-brand-primary-500: var(--color-brand-primary-500);
-    --semantic-brand-primary-600: var(--color-brand-primary-600);
     --semantic-brand-primary-700: var(--color-brand-primary-700);
     --semantic-brand-primary-800: var(--color-brand-primary-800);
-    --semantic-brand-primary-900: var(--color-brand-primary-900);
     --semantic-brand-100: var(--color-brand-100);
     --semantic-brand-125: var(--color-brand-125);
     --semantic-brand-150: var(--color-brand-150);
@@ -573,11 +568,6 @@
     --surface-warning-default-subtle: var(--semantic-warning-125);
     --surface-warning-default-subtle-hover: var(--semantic-warning-100);
     --surface-warning-high-contrast: var(--semantic-warning-800);
-    --text-brand-primary-active: var(--semantic-foundation-white);
-    --text-brand-primary-default: var(--semantic-brand-primary-500);
-    --text-brand-primary-default-hover: var(--semantic-brand-primary-700);
-    --text-brand-primary-on-color: var(--semantic-foundation-white);
-    --text-brand-primary-on-color-hover: var(--semantic-foundation-white);
     --text-brand-active: var(--semantic-foundation-white);
     --text-brand-default: var(--semantic-brand-500);
     --text-brand-default-hover: var(--semantic-brand-700);

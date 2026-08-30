@@ -11,6 +11,7 @@
   "configHash": "4fd30751",
   "profile": "scss",
   "files": [
+    "CHANGELOG.md",
     "package.json",
     "preview.html",
     "README.md",
@@ -274,6 +275,27 @@
       "emittedValue": "var(--semantic-discount-125)",
       "valueHash": {
         "3681:0": "f325c43e"
+      }
+    },
+    {
+      "key": "03395dccc7328b129c1b96d7350e70766f358014",
+      "path": [
+        "beautiful-shadow"
+      ],
+      "type": "shadow",
+      "tier": "semantic",
+      "collection": "Effect styles",
+      "outputNames": {
+        "css": "--beautiful-shadow",
+        "scss": "$beautiful-shadow"
+      },
+      "emitted": {
+        "kind": "declaration",
+        "name": "$beautiful-shadow"
+      },
+      "emittedValue": "11px 21px 52px 0 #0000001a, 46px 82px 94px 0 #00000017, 103px 185px 127px 0 #0000000d, 182px 329px 150px 0 #00000003, 285px 514px 164px 0 #00000000",
+      "valueHash": {
+        "default": "9400044d"
       }
     },
     {
@@ -731,29 +753,6 @@
       "valueHash": {
         "3735:0": "428d09b4",
         "3736:1": "428d09b4"
-      }
-    },
-    {
-      "key": "0c97d864a699912ea6f28e2a6d22dcff63397c96",
-      "path": [
-        "color",
-        "brand-primary",
-        "600"
-      ],
-      "type": "color",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-brand-primary-600",
-        "scss": "$color-brand-primary-600"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-brand-primary-600"
-      },
-      "emittedValue": "#e07f2e",
-      "valueHash": {
-        "1293:0": "79a656e4"
       }
     },
     {
@@ -2470,29 +2469,6 @@
       }
     },
     {
-      "key": "2abaa417b31e139981b4fe4e57a0771244b06744",
-      "path": [
-        "color",
-        "brand-primary",
-        "300"
-      ],
-      "type": "color",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-brand-primary-300",
-        "scss": "$color-brand-primary-300"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-brand-primary-300"
-      },
-      "emittedValue": "#f9b276",
-      "valueHash": {
-        "1293:0": "181ede61"
-      }
-    },
-    {
       "key": "2b02e3047a7313a91271d9857a354e044826c917",
       "path": [
         "body-16",
@@ -2712,29 +2688,6 @@
       "emitted": {
         "kind": "declaration",
         "name": "$border-success-on-color"
-      },
-      "emittedValue": "var(--semantic-foundation-white)",
-      "valueHash": {
-        "3681:0": "2a5c3b4a"
-      }
-    },
-    {
-      "key": "2de90cc641f2756bea35926ccd92e33aa154e434",
-      "path": [
-        "text",
-        "brand-primary",
-        "on-color-hover"
-      ],
-      "type": "color",
-      "tier": "component",
-      "collection": "Mapped",
-      "outputNames": {
-        "css": "--text-brand-primary-on-color-hover",
-        "scss": "$text-brand-primary-on-color-hover"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$text-brand-primary-on-color-hover"
       },
       "emittedValue": "var(--semantic-foundation-white)",
       "valueHash": {
@@ -5080,29 +5033,6 @@
       }
     },
     {
-      "key": "54c0d664dac6a05583e98c93872b5b30544ce43b",
-      "path": [
-        "text",
-        "brand-primary",
-        "default"
-      ],
-      "type": "color",
-      "tier": "component",
-      "collection": "Mapped",
-      "outputNames": {
-        "css": "--text-brand-primary-default",
-        "scss": "$text-brand-primary-default"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$text-brand-primary-default"
-      },
-      "emittedValue": "var(--semantic-brand-primary-500)",
-      "valueHash": {
-        "3681:0": "4d1e23a0"
-      }
-    },
-    {
       "key": "5550f7ca691e46d9808072ccca1c7711aa71d9f2",
       "path": [
         "color",
@@ -6296,29 +6226,6 @@
       "emittedValue": "var(--size-100)",
       "valueHash": {
         "3680:1": "e35b9afa"
-      }
-    },
-    {
-      "key": "69cfdf6f584af38e98d65b148b0456c55c91a1ca",
-      "path": [
-        "semantic",
-        "brand-primary",
-        "600"
-      ],
-      "type": "color",
-      "tier": "semantic",
-      "collection": "Semantic",
-      "outputNames": {
-        "css": "--semantic-brand-primary-600",
-        "scss": "$semantic-brand-primary-600"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$semantic-brand-primary-600"
-      },
-      "emittedValue": "var(--color-brand-primary-600)",
-      "valueHash": {
-        "3680:1": "6323e06c"
       }
     },
     {
@@ -9701,29 +9608,6 @@
       }
     },
     {
-      "key": "a19c5caff2b46f8f2d9beaf8d108661c92425ba7",
-      "path": [
-        "text",
-        "brand-primary",
-        "default-hover"
-      ],
-      "type": "color",
-      "tier": "component",
-      "collection": "Mapped",
-      "outputNames": {
-        "css": "--text-brand-primary-default-hover",
-        "scss": "$text-brand-primary-default-hover"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$text-brand-primary-default-hover"
-      },
-      "emittedValue": "var(--semantic-brand-primary-700)",
-      "valueHash": {
-        "3681:0": "8098d248"
-      }
-    },
-    {
       "key": "a1e38d9f0aac403e5d43a90ed6c27e60cf8bad0f",
       "path": [
         "color",
@@ -11485,29 +11369,6 @@
       }
     },
     {
-      "key": "c4175c397e077892adc6eb5674027147181925fc",
-      "path": [
-        "semantic",
-        "brand-primary",
-        "300"
-      ],
-      "type": "color",
-      "tier": "semantic",
-      "collection": "Semantic",
-      "outputNames": {
-        "css": "--semantic-brand-primary-300",
-        "scss": "$semantic-brand-primary-300"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$semantic-brand-primary-300"
-      },
-      "emittedValue": "var(--color-brand-primary-300)",
-      "valueHash": {
-        "3680:1": "fc086596"
-      }
-    },
-    {
       "key": "c486638cad9e7be1b7cb385d3d4c6d0267a40c10",
       "path": [
         "border",
@@ -12071,29 +11932,6 @@
       "valueHash": {
         "3735:0": "3b1a972a",
         "3736:1": "3b1a972a"
-      }
-    },
-    {
-      "key": "d4196fd0467d576e00a3cb41098b5ee068bd8641",
-      "path": [
-        "color",
-        "brand-primary",
-        "900"
-      ],
-      "type": "color",
-      "tier": "primitive",
-      "collection": "Color",
-      "outputNames": {
-        "css": "--color-brand-primary-900",
-        "scss": "$color-brand-primary-900"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$color-brand-primary-900"
-      },
-      "emittedValue": "#673b15",
-      "valueHash": {
-        "1293:0": "5a02ddec"
       }
     },
     {
@@ -12750,29 +12588,6 @@
       }
     },
     {
-      "key": "df535cad2b02cefa2a4b179e8fdfc5fd5df20658",
-      "path": [
-        "semantic",
-        "brand-primary",
-        "900"
-      ],
-      "type": "color",
-      "tier": "semantic",
-      "collection": "Semantic",
-      "outputNames": {
-        "css": "--semantic-brand-primary-900",
-        "scss": "$semantic-brand-primary-900"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$semantic-brand-primary-900"
-      },
-      "emittedValue": "var(--color-brand-primary-900)",
-      "valueHash": {
-        "3680:1": "db48ca78"
-      }
-    },
-    {
       "key": "df893bbd0142baf8d55e659cd680dab20d4edf48",
       "path": [
         "icon",
@@ -13228,29 +13043,6 @@
       }
     },
     {
-      "key": "ea21f92cc8017fbfb89265121488f4a9b95d3a3d",
-      "path": [
-        "text",
-        "brand-primary",
-        "on-color"
-      ],
-      "type": "color",
-      "tier": "component",
-      "collection": "Mapped",
-      "outputNames": {
-        "css": "--text-brand-primary-on-color",
-        "scss": "$text-brand-primary-on-color"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$text-brand-primary-on-color"
-      },
-      "emittedValue": "var(--semantic-foundation-white)",
-      "valueHash": {
-        "3681:0": "2a5c3b4a"
-      }
-    },
-    {
       "key": "eb08556a8cd382478689df256c6437ad2c15ee39",
       "path": [
         "border",
@@ -13294,29 +13086,6 @@
       "emittedValue": "var(--semantic-discount-400)",
       "valueHash": {
         "3681:0": "a94dbac2"
-      }
-    },
-    {
-      "key": "ecbec03b63a30345c91166917bbe42acbe507a26",
-      "path": [
-        "text",
-        "brand-primary",
-        "active"
-      ],
-      "type": "color",
-      "tier": "component",
-      "collection": "Mapped",
-      "outputNames": {
-        "css": "--text-brand-primary-active",
-        "scss": "$text-brand-primary-active"
-      },
-      "emitted": {
-        "kind": "declaration",
-        "name": "$text-brand-primary-active"
-      },
-      "emittedValue": "var(--semantic-foundation-white)",
-      "valueHash": {
-        "3681:0": "2a5c3b4a"
       }
     },
     {
